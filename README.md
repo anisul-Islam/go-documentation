@@ -1,6 +1,6 @@
 # Go Programming Tutorial
 
-## Introduction to Go Programming
+### Introduction to Go Programming
 
 - What is Go?
 
