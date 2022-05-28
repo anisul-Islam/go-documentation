@@ -22,3 +22,25 @@
 - Prerequisities
 
   - Nothing, but knowing C/C++ or any programming language is an advantage
+
+### Go Program structure
+
+- package declaration
+- import packages
+- function
+- statement
+
+```go
+  package main
+
+  import “fmt”
+
+  func main() {
+
+    fmt.Println(“My name is Anisul Islam”)
+
+  }
+
+  output: My name is Anisul Islam
+
+```
