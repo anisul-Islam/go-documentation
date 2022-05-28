@@ -25,7 +25,7 @@
 
 <h2> 2. Go Program structure </h2>
 
-- package declaration
+- package declaration - every go program is consist of packages. it is a mandatory thing. it has to be the first statement of go program.
 - import packages
 - function
 - statement
