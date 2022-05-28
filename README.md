@@ -1,6 +1,6 @@
 # Go Programming Tutorial
 
-<h2> Introduction to Go Programming </h2>
+<h2> 1. Introduction to Go Programming </h2>
 
 - What is Go?
 
@@ -23,7 +23,7 @@
 
   - Nothing, but knowing C/C++ or any programming language is an advantage
 
-<h2> Go Program structure </h2>
+<h2> 2. Go Program structure </h2>
 
 - package declaration
 - import packages
