@@ -76,6 +76,30 @@
 - running the program
   - go mod init project-name
   - go run fileName.go
+
+<h2> 5. Tokens - Escape sequences & comments </h2>
+
+- Token of any programming language
+
+  - keywords
+  - data types
+  - variables
+  - Escapse sequences
+  - operators
+
+- escape sequences example
+
+  ```go
+    package main
+    import "fmt"
+    func main(){
+      fmt.Print("Name \t Age\n")
+      fmt.Print("----- \t ------\n")
+      fmt.Print("Anis \t 32\n")
+      fmt.Print("Rakib \t 29\n")
+    }
+  ```
+
 - there are 2 types of comment is available in Go -> single line, multiple line comment. comments are ignored by the compiler.
   ```go
     // single line comment
@@ -86,15 +110,7 @@
     */
   ```
 
-<h2> 5. Keywords & Data types </h2>
-
-- Token of any programming language
-
-  - keywords
-  - data types
-  - variables
-  - Escapse sequences
-  - operators
+<h2> 6. Keywords & Data types </h2>
 
 - keywords: keywords are reserved words.
   ![keywords](./images/keywords.png)
@@ -113,10 +129,10 @@
     variation of float-> float32, float64
   ```
 
- <h2> 6. Variables </h2>
+<h2> 7. Variables </h2>
 
 - syntax of variable declaration: var variable1, variable2, ... variableN dataType
-
+- variable naming convention (camelcasing)
 - example
 
   ```go
@@ -157,3 +173,50 @@
 
 
   ```
+
+<h2> 8. Constants && Getting User Input </h2>
+
+- Constants indicate to fix values
+
+- example
+
+  ```go
+    package main
+    import "fmt"
+    func main(){
+      const PI = 3.1416
+      fmt.Println("pi = "pi)
+    }
+  ```
+
+<h2> 9. Operators </h2>
+
+- operator - symbol for doing calculation
+- Types of operators
+
+  - Arithmetic Operators -> +, -, \*, /, %
+  - Assignment Operators -> =, +=, -=, \*=, /=, %=
+  - Unary Operators -> ++, --
+  - Relational Operators
+  - Logical operators -> &&, ||, !
+  - Bitwise operators -> &, |, ^
+  - others -> , (comma), & (returns address), \* (pointer)
+
+- example
+
+  ```go
+    package main
+    import "fmt"
+    func main(){
+      const PI = 3.1416
+      fmt.Println("pi = "pi)
+    }
+  ```
+
+<h2> 10. Find the area of triangle / circle </h2>
+<h2> 11. Calculator program </h2>
+<h2> 12. Temperature converter </h2>
+<h2> 13. if, else if, else control statement </h2>
+<h2> 14. switch control statement </h2>
+<h2> 15. Loop control statement </h2>
+<h2> 16. Functions </h2>
