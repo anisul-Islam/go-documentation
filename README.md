@@ -58,15 +58,16 @@
 
   ```go
   // filename: main.go
-  // a program for printing your details
+  // a program for printing student details
   package main
 
   import "fmt"
 
   func main() {
-    fmt.Println("My name is Anisul Islam")
-    fmt.Println("I am 32 years old")
-    fmt.Print("I am from Bangladesh");
+    fmt.Println("Anisul Islam is a student")
+    fmt.Println("Anisul Islam is 32 years old")
+    fmt.Println("Anisul Islam has got 3.92/5 in SSC")
+    fmt.Print("Anisul Islam originally from Bangladesh");
   }
 
 
@@ -90,8 +91,9 @@
 - Token of any programming language
 
   - keywords
-  - variables
   - data types
+  - variables
+  - Escapse sequences
   - operators
 
 - keywords: keywords are reserved words.
@@ -109,4 +111,49 @@
     variation of integer-> int8 (8 bits), int16, int32, int64, uint8 (only positive 0 to 255), uint6, uint32, uint64
 
     variation of float-> float32, float64
+  ```
+
+ <h2> 6. Variables </h2>
+
+- syntax of variable declaration: var variable1, variable2, ... variableN dataType
+
+- example
+
+  ```go
+    package main
+    import "fmt"
+    func main(){
+      // static variable declaration
+      var name, country string
+      var age int
+      var gpa float32
+
+      // variable initialization
+      name = "anisul islam"
+      country = "Bangladesh"
+      age = 32
+      gpa = 3.92
+
+      // dynamic variable declaration + initialization
+     //  var name = "Anisul Islam"
+     //  var country = "Bangladesh"
+     //  var age = 32
+     //  var gpa = 3.92
+
+     // var name,country,age,gpa = "anisul islam", "Bangladesh", 32, 3.92
+
+     // shortcuts
+     // name := "Anisul Islam"
+     // country := "Bangladesh"
+     // age := 32
+     // cgpa := 3.92
+
+      fmt.Println(name)
+      fmt.Println(name, " is a student")
+      fmt.Println(name,"is", age, "years old")
+      fmt.Println(name, "has got" , gpa "/5 in SSC")
+      fmt.Print(name,"originally from ", country);
+    }
+
+
   ```
