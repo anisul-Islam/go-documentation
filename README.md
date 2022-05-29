@@ -95,5 +95,18 @@
   - operators
 
 - keywords: keywords are reserved words.
-  <img src="./images/kewords.png">
-- Data types:
+  ![keywords](./images/keywords.png)
+- Data types: boolean, string, numeric - integer, floating, derived types - pointer, array, structure, slice, map, interface etc.
+- example of data types
+
+  ```go
+    "anisul islam" -> string type
+    21 -> int type
+    21.5 -> floating type
+    true/false -> bool
+
+    // more on int, float
+    variation of integer-> int8 (8 bits), int16, int32, int64, uint8 (only positive 0 to 255), uint6, uint32, uint64
+
+    variation of float-> float32, float64
+  ```
