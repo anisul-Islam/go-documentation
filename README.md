@@ -51,3 +51,36 @@
 - IDE / Text Editor -> Any text editor- notepad / notepad++ / VSCode (free), Vim (free) / GoLand (paid)
 - Go compiler -> compiler translate the source code into machine/executable code so that machine can understand the instructions
 - go extension for VSCode
+
+<h2> 4. First Go Program </h2>
+
+- A simple go program
+
+  ```go
+  // filename: main.go
+  // a program for printing your details
+  package main
+
+  import "fmt"
+
+  func main() {
+    fmt.Println("My name is Anisul Islam")
+    fmt.Println("I am 32 years old")
+    fmt.Print("I am from Bangladesh");
+  }
+
+
+  ```
+
+- running the program
+  - go mod init project-name
+  - go run fileName.go
+- there are 2 types of comment is available in Go -> single line, multiple line comment. comments are ignored by the compiler.
+  ```go
+    // single line comment
+    /*
+      multiple
+      line
+      comment
+    */
+  ```
