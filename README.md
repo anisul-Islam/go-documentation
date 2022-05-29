@@ -45,3 +45,9 @@
   output: My name is Anisul Islam
 
 ```
+
+<h2> 3. Environment setup </h2>
+
+- IDE / Text Editor -> Any text editor- notepad / notepad++ / VSCode (free), Vim (free) / GoLand (paid)
+- Go compiler -> compiler translate the source code into machine/executable code so that machine can understand the instructions
+- go extension for VSCode
