@@ -84,3 +84,16 @@
       comment
     */
   ```
+
+<h2> 5. Keywords & Data types </h2>
+
+- Token of any programming language
+
+  - keywords
+  - variables
+  - data types
+  - operators
+
+- keywords: keywords are reserved words.
+  <img src="./images/kewords.png">
+- Data types:
