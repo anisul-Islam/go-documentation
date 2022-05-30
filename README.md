@@ -66,7 +66,7 @@
   func main() {
     fmt.Println("Anisul Islam is a student")
     fmt.Println("Anisul Islam is 32 years old")
-    fmt.Println("Anisul Islam has got 3.92/5 in SSC")
+    fmt.Println("Anisul Islam has got GPA 3.92/5 in SSC")
     fmt.Print("Anisul Islam originally from Bangladesh");
   }
 
@@ -162,19 +162,40 @@
      // name := "Anisul Islam"
      // country := "Bangladesh"
      // age := 32
-     // cgpa := 3.92
+     // gpa := 3.92
 
       fmt.Println(name)
       fmt.Println(name, " is a student")
       fmt.Println(name,"is", age, "years old")
-      fmt.Println(name, "has got" , gpa "/5 in SSC")
+      fmt.Println(name, "has got" , gpa, "/5 in SSC")
       fmt.Print(name,"originally from ", country);
     }
 
 
   ```
 
-<h2> 8. Constants && Getting User Input </h2>
+<h2> 8. Formatting output</h2>
+
+- example
+
+  ```go
+
+   package main
+   import "fmt"
+   func main(){
+      name := "Anisul Islam"
+      country := "Bangladesh"
+      age := 32
+      gpa := 3.92
+
+      fmt.Printf("%v is a student\n", name)
+      fmt.Printf("%v is %v years old\n", name, age)
+      fmt.Printf("%v has got GPA %v/5 in SSC\n", name, gpa)
+      fmt.Printf("%v originally from %v\n", name, country);
+   }
+  ```
+
+<h2> 9. Constants && Getting User Input </h2>
 
 - Constants indicate to fix values
 
@@ -184,12 +205,32 @@
     package main
     import "fmt"
     func main(){
-      const PI = 3.1416
-      fmt.Println("pi = "pi)
+      var name string
+     	const COUNTRY = "Bangladesh"
+     	var age, num1, num2 int
+     	var gpa float32
+
+  		fmt.Printf("Enter your name: ")
+  		fmt.Scanf("%v", &name)
+
+  		fmt.Printf("Enter your age: ")
+  		fmt.Scan(&age)
+
+  		fmt.Printf("Enter your SSC gpa: ")
+  		fmt.Scanln(&gpa)
+
+  		fmt.Printf("Enter 2 numbers: ")
+  		fmt.Scan(&num1, &num2)
+
+      fmt.Printf("%v is a student\n", name)
+      fmt.Printf("%v is %v years old\n", name, age)
+      fmt.Printf("%v has got GPA %v/5 in SSC\n", name, gpa)
+      fmt.Printf("%v originally from %v\n", name, COUNTRY);
+      fmt.Printf("num1 = %v, num2 = %v\n", num1, num2);
     }
   ```
 
-<h2> 9. Operators </h2>
+<h2> 10. Operators </h2>
 
 - operator - symbol for doing calculation
 - Types of operators
@@ -213,10 +254,21 @@
     }
   ```
 
-<h2> 10. Find the area of triangle / circle </h2>
-<h2> 11. Calculator program </h2>
-<h2> 12. Temperature converter </h2>
-<h2> 13. if, else if, else control statement </h2>
-<h2> 14. switch control statement </h2>
-<h2> 15. Loop control statement </h2>
-<h2> 16. Functions </h2>
+<h2> 11. Find the area of triangle / circle </h2>
+<h2> 12. Calculator program </h2>
+<h2> 13. Temperature converter </h2>
+<h2> 14. if, else if, else control statement </h2>
+<h2> 15. switch control statement </h2>
+<h2> 16. Loop control statement </h2>
+
+- in go we have only 1 loop which is for loop; can take form of while loop as weell
+- it helps us to execute some statements again and again
+<h2> 17. Functions </h2>
+<h2> 18. Arrays & slices data types </h2>
+- array is fixed in Go
+- var arrayName[size] dataType
+- only the same data type in one array
+- var array_name = [length]datatype{values} // here length is defined
+- array index starts with 0
+- what if we dont know the size of array then we will use slice; allows us to use dynamic size
+- append(sliceName, sliceNewValue)
