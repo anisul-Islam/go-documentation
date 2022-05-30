@@ -289,6 +289,7 @@
 - it helps us to execute some statements again and again
 <h2> 21. Functions </h2>
 <h2> 22. Arrays & slices data types </h2>
+
 - array is fixed in Go
 - var arrayName[size] dataType
 - only the same data type in one array
