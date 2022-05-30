@@ -244,14 +244,33 @@
   - Bitwise operators -> &, |, ^
   - others -> , (comma), & (returns address), \* (pointer)
 
-- example
+- example of Arithmetic operator
 
   ```go
     package main
     import "fmt"
     func main(){
-      const PI = 3.1416
-      fmt.Println("pi = "pi)
+      // arithmetic operator -> +, -, *, /, %
+      var num1, num2 int
+      fmt.Printf("num1= ");
+      fmt.Scan(&num1)
+      fmt.Printf("num2= ");
+      fmt.Scan(&num2)
+
+      result := num1 + num2
+      fmt.Printf("%v+%v=%v\n", num1, num2, result)
+
+      result = num1 - num2
+      fmt.Printf("%v-%v=%v\n", num1, num2, result)
+
+      result = num1 * num2
+      fmt.Printf("%v*%v=%v\n", num1, num2, result)
+
+      var result2 =  float32(num1) / float32(num2)
+      fmt.Printf("%v/%v=%v\n", num1, num2, result2)
+
+      result = num1 % num2
+      fmt.Printf("%v%%%v=%v\n", num1, num2, result)
     }
   ```
 
@@ -273,3 +292,7 @@
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
+
+```
+
+```
