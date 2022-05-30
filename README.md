@@ -275,16 +275,20 @@
   ```
 
 <h2> 11. Find the area of triangle / circle </h2>
-<h2> 12. Calculator program </h2>
-<h2> 13. Temperature converter </h2>
-<h2> 14. if, else if, else control statement </h2>
-<h2> 15. switch control statement </h2>
-<h2> 16. Loop control statement </h2>
+<h2> 12. Temperature converter </h2>
+<h2> 13. Assignment Operator </h2>
+<h2> 14. Unary Operator </h2>
+<h2> 15. Relational Operator </h2>
+<h2> 16. Logical Operator </h2>
+<h2> 17. Bitwise Operator </h2>
+<h2> 18. if, else if, else control statement </h2>
+<h2> 19. switch control statement </h2>
+<h2> 20. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
-<h2> 17. Functions </h2>
-<h2> 18. Arrays & slices data types </h2>
+<h2> 21. Functions </h2>
+<h2> 22. Arrays & slices data types </h2>
 - array is fixed in Go
 - var arrayName[size] dataType
 - only the same data type in one array
