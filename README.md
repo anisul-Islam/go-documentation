@@ -231,7 +231,40 @@
     }
   ```
 
-<h2> 10. Operators </h2>
+<h2> 10. Number conversion calculator & number formatting</h2>
+
+- example
+
+  ```go
+      package main
+
+      import "fmt"
+      func main(){
+
+
+        // string formatting
+        // var name = "Anisul Islam"
+        // fmt.Printf("%s\n",name)
+        // fmt.Printf("%q\n",name)
+
+          // floating number formatting
+        // var number = 3.1416
+        // fmt.Printf("%.2f\n",number)
+
+        var decimalNumber int
+
+        fmt.Printf("decimal number= ")
+        fmt.Scanf("%v", &decimalNumber)
+
+        fmt.Printf("Binary Number = %b\n",decimalNumber)
+        fmt.Printf("Octal Number = %o\n",decimalNumber)
+        fmt.Printf("Hexa Number = %x\n",decimalNumber)
+
+      }
+
+  ```
+
+<h2> 11. Operators </h2>
 
 - operator - symbol for doing calculation
 - Types of operators
@@ -274,21 +307,21 @@
     }
   ```
 
-<h2> 11. Find the area of triangle / circle </h2>
-<h2> 12. Temperature converter </h2>
-<h2> 13. Assignment Operator </h2>
-<h2> 14. Unary Operator </h2>
-<h2> 15. Relational Operator </h2>
-<h2> 16. Logical Operator </h2>
-<h2> 17. Bitwise Operator </h2>
-<h2> 18. if, else if, else control statement </h2>
-<h2> 19. switch control statement </h2>
-<h2> 20. Loop control statement </h2>
+<h2> 12. Find the area of triangle / circle </h2>
+<h2> 13. Temperature converter </h2>
+<h2> 14. Assignment Operator </h2>
+<h2> 15. Unary Operator </h2>
+<h2> 16. Relational Operator </h2>
+<h2> 17. Logical Operator </h2>
+<h2> 18. Bitwise Operator </h2>
+<h2> 19. if, else if, else control statement </h2>
+<h2> 20. switch control statement </h2>
+<h2> 21. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
-<h2> 21. Functions </h2>
-<h2> 22. Arrays & slices data types </h2>
+<h2> 22. Functions </h2>
+<h2> 23. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
@@ -297,7 +330,3 @@
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
-
-```
-
-```
