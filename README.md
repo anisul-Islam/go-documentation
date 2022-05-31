@@ -315,13 +315,16 @@
 <h2> 17. Logical Operator </h2>
 <h2> 18. Bitwise Operator </h2>
 <h2> 19. if, else if, else control statement </h2>
-<h2> 20. switch control statement </h2>
-<h2> 21. Loop control statement </h2>
+<h2> 20. A Go program to determine whether a number is positive/negative/zero </h2>
+<h2> 21. A Go program to determine whether a number is even/odd </h2>
+<h2> 22. A Go program to spell digits </h2>
+<h2> 23. switch control statement </h2>
+<h2> 24. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
-<h2> 22. Functions </h2>
-<h2> 23. Arrays & slices data types </h2>
+<h2> 25. Functions </h2>
+<h2> 26. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
