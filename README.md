@@ -394,8 +394,63 @@
   ```
 
   <h2> 18. if, else if, else control statement </h2>
-  <h2> 19. A Go program to determine whether a number is positive/negative/zero </h2>
-  <h2> 20. A Go program to determine whether a number is even/odd </h2>
+
+  - example
+
+    ```go
+        // with if only
+        package main
+
+        import "fmt"
+        func main(){
+          // logic for a program to determine positive / negative / zero
+          number := 10
+          if number > 0 {
+            fmt.Printf("Positive\n")
+          }
+          if number < 0 {
+            fmt.Printf("Negative\n")
+          }
+          if number == 0 {
+            fmt.Printf("Zero\n")
+          }
+        }
+
+        // with if, else if
+        package main
+
+        import "fmt"
+        func main(){
+          // logic for a program to determine positive / negative / zero
+          number := 10
+          if number > 0 {
+            fmt.Printf("Positive\n")
+          }	else if number < 0 {
+            fmt.Printf("Negative\n")
+          } else if number == 0 {
+            fmt.Printf("Zero\n")
+          }
+        }
+
+        // with if, else if, else
+        package main
+
+        import "fmt"
+        func main(){
+          // logic for a program to determine positive / negative / zero
+          number := 10
+          if number > 0 {
+            fmt.Printf("Positive\n")
+          }	else if number < 0 {
+            fmt.Printf("Negative\n")
+          } else {
+            fmt.Printf("Zero\n")
+          }
+        }
+    ```
+
+  <h2> 19. A Go program to determine whether a number is even/odd </h2>
+  <h2> 20. A Go program to find largest number among 3 numbers </h2>
   <h2> 21. A Go program to spell digits </h2>
   <h2> 22. switch control statement </h2>
   <h2> 23. Loop control statement </h2>
