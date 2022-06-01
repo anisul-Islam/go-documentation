@@ -341,8 +341,32 @@
 
   ```
 
-  <h2> 13. Temperature converter </h2>
-  <h2> 14. Assignment Operator </h2>
+  <h2> 13. Assignment Operator </h2>
+
+  - example
+
+  ```go
+      package main
+
+      import "fmt"
+      func main(){
+
+          // 2. Assignment Operators -> =, +=, -=, *=, /=, %=
+
+          x := 4
+
+          x = x + 1
+          x+=1 // x = x + 1
+          x-=1 // x = x - 1
+          x*=1 // x = x * 1
+          x/=1 // x = x / 1
+          x%=1 // x = x % 1
+
+          fmt.Printf("x = %v\n",x)
+        }
+
+  ```
+
   <h2> 15. Unary Operator </h2>
   <h2> 16. Relational Operator </h2>
   <h2> 17. Logical Operator </h2>
