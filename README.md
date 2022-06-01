@@ -487,7 +487,6 @@ func main(){
 <h2> 21. A Go program to find largest number among 3 numbers using Logical operators </h2>
 
 ```go
-// a go program to determine even/odd
 package main
 
 import "fmt"
