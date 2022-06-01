@@ -455,10 +455,9 @@
   }
 ```
 
-<h2> 20. A Go program to find largest number among 3 numbers </h2>
+<h2> 20. A Go program to find largest number among 3 numbers using relational operators </h2>
 
 ```go
-    // a go program to determine even/odd
 package main
 
 import "fmt"
@@ -485,14 +484,38 @@ func main(){
 }
 ```
 
-<h2> 21. A Go program to spell digits </h2>
-<h2> 22. switch control statement </h2>
-<h2> 23. Loop control statement </h2>
+<h2> 21. A Go program to find largest number among 3 numbers using Logical operators </h2>
+
+```go
+// a go program to determine even/odd
+package main
+
+import "fmt"
+func main(){
+	var number1, number2, number3 int
+	fmt.Printf("Enter 3 numbers: ")
+	fmt.Scanf("%v %v %v",&number1, &number2, &number3)
+
+	if (number1 > number2) && (number1 > number3){
+			fmt.Printf("%v is the largest number\n", number1)
+	}	else if (number2 > number1) && (number2 > number3){
+			fmt.Printf("%v is the largest number\n", number2)
+	}	else if (number3 > number1) && (number3 > number2){
+			fmt.Printf("%v is the largest number\n", number3)
+	}	else {
+		fmt.Printf("Numbers are equal\n")
+	}
+}
+```
+
+<h2> 22. A Go program to spell digits </h2>
+<h2> 23. switch control statement </h2>
+<h2> 24. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
-<h2> 24. Functions </h2>
-<h2> 25. Arrays & slices data types </h2>
+<h2> 25. Functions </h2>
+<h2> 26. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
@@ -501,7 +524,3 @@ func main(){
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
-
-```
-
-```
