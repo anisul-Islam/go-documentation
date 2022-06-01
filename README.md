@@ -176,30 +176,26 @@
 
 <h2> 8. Formatting output</h2>
 
-- example
+```go
 
-  ```go
+ package main
+ import "fmt"
+ func main(){
+    name := "Anisul Islam"
+    country := "Bangladesh"
+    age := 32
+    gpa := 3.92
 
-   package main
-   import "fmt"
-   func main(){
-      name := "Anisul Islam"
-      country := "Bangladesh"
-      age := 32
-      gpa := 3.92
-
-      fmt.Printf("%v is a student\n", name)
-      fmt.Printf("%v is %v years old\n", name, age)
-      fmt.Printf("%v has got GPA %v/5 in SSC\n", name, gpa)
-      fmt.Printf("%v originally from %v\n", name, country);
-   }
-  ```
+    fmt.Printf("%v is a student\n", name)
+    fmt.Printf("%v is %v years old\n", name, age)
+    fmt.Printf("%v has got GPA %v/5 in SSC\n", name, gpa)
+    fmt.Printf("%v originally from %v\n", name, country);
+ }
+```
 
 <h2> 9. Constants && Getting User Input </h2>
 
 - Constants indicate to fix values
-
-- example
 
   ```go
 
@@ -233,36 +229,34 @@
 
 <h2> 10. Number conversion calculator & number formatting</h2>
 
-- example
+```go
+    package main
 
-  ```go
-      package main
-
-      import "fmt"
-      func main(){
+    import "fmt"
+    func main(){
 
 
-        // string formatting
-        // var name = "Anisul Islam"
-        // fmt.Printf("%s\n",name)
-        // fmt.Printf("%q\n",name)
+      // string formatting
+      // var name = "Anisul Islam"
+      // fmt.Printf("%s\n",name)
+      // fmt.Printf("%q\n",name)
 
-          // floating number formatting
-        // var number = 3.1416
-        // fmt.Printf("%.2f\n",number)
+        // floating number formatting
+      // var number = 3.1416
+      // fmt.Printf("%.2f\n",number)
 
-        var decimalNumber int
+      var decimalNumber int
 
-        fmt.Printf("decimal number= ")
-        fmt.Scanf("%v", &decimalNumber)
+      fmt.Printf("decimal number= ")
+      fmt.Scanf("%v", &decimalNumber)
 
-        fmt.Printf("Binary Number = %b\n",decimalNumber)
-        fmt.Printf("Octal Number = %o\n",decimalNumber)
-        fmt.Printf("Hexa Number = %x\n",decimalNumber)
+      fmt.Printf("Binary Number = %b\n",decimalNumber)
+      fmt.Printf("Octal Number = %o\n",decimalNumber)
+      fmt.Printf("Hexa Number = %x\n",decimalNumber)
 
-      }
+    }
 
-  ```
+```
 
 <h2> 11. Operators </h2>
 
@@ -309,93 +303,85 @@
 
 <h2> 12. Find the area of triangle and circle </h2>
 
-- example
+```go
+    package main
 
-  ```go
-      package main
+    import "fmt"
+    func main(){
 
-      import "fmt"
-      func main(){
+      var radius, area float32
 
-        var radius, area float32
+      fmt.Printf("Enter Radius : ")
+      fmt.Scan(&radius)
 
-        fmt.Printf("Enter Radius : ")
-        fmt.Scan(&radius)
+      area = 3.1416 * radius * radius
+      fmt.Printf("Area of circle: %v\n",area)
 
-        area = 3.1416 * radius * radius
-        fmt.Printf("Area of circle: %v\n",area)
+      // a program to calculate area of triangle
+      // var base, height, area float32
 
-        // a program to calculate area of triangle
-        // var base, height, area float32
+      // fmt.Printf("Base = ")
+      // fmt.Scan(&base)
 
-        // fmt.Printf("Base = ")
-        // fmt.Scan(&base)
+      // fmt.Printf("Height = ")
+      // fmt.Scan(&height)
 
-        // fmt.Printf("Height = ")
-        // fmt.Scan(&height)
+      // area = 0.5 * base * height
 
-        // area = 0.5 * base * height
+      // fmt.Printf("Area of triangle = %v\n", area)
+    }
 
-        // fmt.Printf("Area of triangle = %v\n", area)
-      }
-
-  ```
+```
 
   <h2> 13. Assignment Operator </h2>
 
-  - example
+```go
+    package main
 
-  ```go
-      package main
+    import "fmt"
+    func main(){
 
-      import "fmt"
-      func main(){
+        // 2. Assignment Operators -> =, +=, -=, *=, /=, %=
 
-          // 2. Assignment Operators -> =, +=, -=, *=, /=, %=
+        x := 4
 
-          x := 4
+        x = x + 1
+        x+=1 // x = x + 1
+        x-=1 // x = x - 1
+        x*=1 // x = x * 1
+        x/=1 // x = x / 1
+        x%=1 // x = x % 1
 
-          x = x + 1
-          x+=1 // x = x + 1
-          x-=1 // x = x - 1
-          x*=1 // x = x * 1
-          x/=1 // x = x / 1
-          x%=1 // x = x % 1
+        fmt.Printf("x = %v\n",x)
+      }
 
-          fmt.Printf("x = %v\n",x)
-        }
-
-  ```
+```
 
   <h2> 14. Unary Operator </h2>
   <h2> 15. Relational Operator </h2>
   <h2> 16. Logical Operator </h2>
   <h2> 17. Bitwise Operator </h2>
 
-  - example
+```go
+    package main
 
-  ```go
-      package main
+    import "fmt"
+    func main(){
 
-      import "fmt"
-      func main(){
+      x := 18      // 18 = 10010
+      y := 17      // 17 = 10001
+      and := x & y   //16  = 10000
+      or := x | y   //19  = 10011
+      exor := x ^ y   //3  = 00011
+      fmt.Printf("x & y = %v\n",and)
+      fmt.Printf("x | y = %v\n",or)
+      fmt.Printf("x ^ y = %v\n",exor)
 
-        x := 18      // 18 = 10010
-        y := 17      // 17 = 10001
-        and := x & y   //16  = 10000
-        or := x | y   //19  = 10011
-        exor := x ^ y   //3  = 00011
-        fmt.Printf("x & y = %v\n",and)
-        fmt.Printf("x | y = %v\n",or)
-        fmt.Printf("x ^ y = %v\n",exor)
+    }
 
-      }
-
-  ```
+```
 
   <h2> 18. if, else if, else control statement </h2>
-
-  - example
 
     ```go
         // with if only
@@ -403,7 +389,7 @@
 
         import "fmt"
         func main(){
-          // logic for a program to determine positive / negative / zero
+          // a program to determine positive / negative / zero
           number := 10
           if number > 0 {
             fmt.Printf("Positive\n")
@@ -421,7 +407,7 @@
 
         import "fmt"
         func main(){
-          // logic for a program to determine positive / negative / zero
+          // a program to determine positive / negative / zero
           number := 10
           if number > 0 {
             fmt.Printf("Positive\n")
@@ -437,7 +423,7 @@
 
         import "fmt"
         func main(){
-          // logic for a program to determine positive / negative / zero
+          // a program to determine positive / negative / zero
           number := 10
           if number > 0 {
             fmt.Printf("Positive\n")
@@ -449,11 +435,37 @@
         }
     ```
 
-  <h2> 19. A Go program to determine whether a number is even/odd </h2>
-  <h2> 20. A Go program to find largest number among 3 numbers </h2>
-  <h2> 21. A Go program to spell digits </h2>
-  <h2> 22. switch control statement </h2>
-  <h2> 23. Loop control statement </h2>
+<h2> 19. A Go program to determine whether a number is even/odd </h2>
+
+```go
+    // a go program to determine even/odd
+  package main
+
+  import "fmt"
+  func main(){
+    var number int
+    fmt.Printf("Enter any integer: ")
+    fmt.Scanf("%v",&number)
+
+    if number % 2 == 0 {
+      fmt.Printf("Even\n")
+    }	else {
+      fmt.Printf("Odd\n")
+    }
+  }
+```
+
+````
+
+<h2> 20. A Go program to find largest number among 3 numbers </h2>
+
+  ```go
+
+````
+
+<h2> 21. A Go program to spell digits </h2>
+<h2> 22. switch control statement </h2>
+<h2> 23. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
@@ -467,3 +479,7 @@
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
+
+```
+
+```
