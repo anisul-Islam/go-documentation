@@ -367,21 +367,43 @@
 
   ```
 
-  <h2> 15. Unary Operator </h2>
-  <h2> 16. Relational Operator </h2>
-  <h2> 17. Logical Operator </h2>
-  <h2> 18. Bitwise Operator </h2>
-  <h2> 19. if, else if, else control statement </h2>
-  <h2> 20. A Go program to determine whether a number is positive/negative/zero </h2>
-  <h2> 21. A Go program to determine whether a number is even/odd </h2>
-  <h2> 22. A Go program to spell digits </h2>
-  <h2> 23. switch control statement </h2>
-  <h2> 24. Loop control statement </h2>
+  <h2> 14. Unary Operator </h2>
+  <h2> 15. Relational Operator </h2>
+  <h2> 16. Logical Operator </h2>
+  <h2> 17. Bitwise Operator </h2>
+
+  - example
+
+  ```go
+      package main
+
+      import "fmt"
+      func main(){
+
+        x := 18      // 18 = 10010
+        y := 17      // 17 = 10001
+        and := x & y   //16  = 10000
+        or := x | y   //19  = 10011
+        exor := x ^ y   //3  = 00011
+        fmt.Printf("x & y = %v\n",and)
+        fmt.Printf("x | y = %v\n",or)
+        fmt.Printf("x ^ y = %v\n",exor)
+
+      }
+
+  ```
+
+  <h2> 18. if, else if, else control statement </h2>
+  <h2> 19. A Go program to determine whether a number is positive/negative/zero </h2>
+  <h2> 20. A Go program to determine whether a number is even/odd </h2>
+  <h2> 21. A Go program to spell digits </h2>
+  <h2> 22. switch control statement </h2>
+  <h2> 23. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
-<h2> 25. Functions </h2>
-<h2> 26. Arrays & slices data types </h2>
+<h2> 24. Functions </h2>
+<h2> 25. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
