@@ -307,19 +307,52 @@
     }
   ```
 
-<h2> 12. Find the area of triangle / circle </h2>
-<h2> 13. Temperature converter </h2>
-<h2> 14. Assignment Operator </h2>
-<h2> 15. Unary Operator </h2>
-<h2> 16. Relational Operator </h2>
-<h2> 17. Logical Operator </h2>
-<h2> 18. Bitwise Operator </h2>
-<h2> 19. if, else if, else control statement </h2>
-<h2> 20. A Go program to determine whether a number is positive/negative/zero </h2>
-<h2> 21. A Go program to determine whether a number is even/odd </h2>
-<h2> 22. A Go program to spell digits </h2>
-<h2> 23. switch control statement </h2>
-<h2> 24. Loop control statement </h2>
+<h2> 12. Find the area of triangle and circle </h2>
+
+- example
+
+  ```go
+      package main
+
+      import "fmt"
+      func main(){
+
+        var radius, area float32
+
+        fmt.Printf("Enter Radius : ")
+        fmt.Scan(&radius)
+
+        area = 3.1416 * radius * radius
+        fmt.Printf("Area of circle: %v\n",area)
+
+        // a program to calculate area of triangle
+        // var base, height, area float32
+
+        // fmt.Printf("Base = ")
+        // fmt.Scan(&base)
+
+        // fmt.Printf("Height = ")
+        // fmt.Scan(&height)
+
+        // area = 0.5 * base * height
+
+        // fmt.Printf("Area of triangle = %v\n", area)
+      }
+
+  ```
+
+  <h2> 13. Temperature converter </h2>
+  <h2> 14. Assignment Operator </h2>
+  <h2> 15. Unary Operator </h2>
+  <h2> 16. Relational Operator </h2>
+  <h2> 17. Logical Operator </h2>
+  <h2> 18. Bitwise Operator </h2>
+  <h2> 19. if, else if, else control statement </h2>
+  <h2> 20. A Go program to determine whether a number is positive/negative/zero </h2>
+  <h2> 21. A Go program to determine whether a number is even/odd </h2>
+  <h2> 22. A Go program to spell digits </h2>
+  <h2> 23. switch control statement </h2>
+  <h2> 24. Loop control statement </h2>
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
