@@ -619,8 +619,36 @@ func main(){
 
 ```
 
-<h2> 25. Functions </h2>
-<h2> 26. Arrays & slices data types </h2>
+<h2> 26. break and continue statement </h2>
+
+```go
+
+  package main
+
+import "fmt"
+func main(){
+
+	// break, continue statement
+
+	for i := 1; i <= 10; i++ {
+		if i%2 == 0 {
+			continue
+		}
+		fmt.Printf("%v\n",i)
+	}
+	for i := 1; i <= 10; i++ {
+		if i%2 == 0 {
+			break
+		}
+		fmt.Printf("%v\n",i)
+	}
+
+}
+
+```
+
+<h2> 27. Functions </h2>
+<h2> 28. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
