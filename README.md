@@ -591,6 +591,34 @@ func main(){
 
 - in go we have only 1 loop which is for loop; can take form of while loop as weell
 - it helps us to execute some statements again and again
+
+<h2> 25. Series related programs </h2>
+
+```go
+    package main
+
+    import "fmt"
+    func main(){
+
+        // series -> 2 + 4 + 6 + 8 + ... N
+        var startNumber, endNumber int
+
+        fmt.Printf("Enter the starting number of series: ")
+        fmt.Scan(&startNumber)
+
+        fmt.Printf("Enter the last number of series: ")
+        fmt.Scan(&endNumber)
+
+        sum := 0
+        for i := startNumber; i <= endNumber; i=i+2 {
+          sum = sum + i
+        }
+        fmt.Printf("sum = %v\n",sum)
+
+}
+
+```
+
 <h2> 25. Functions </h2>
 <h2> 26. Arrays & slices data types </h2>
 
@@ -601,3 +629,7 @@ func main(){
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
+
+```
+
+```
