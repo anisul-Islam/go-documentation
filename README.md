@@ -579,6 +579,10 @@ func main(){
 		fmt.Printf("Eight\n")
 	case 9:
 		fmt.Printf("Nine\n")
+
+  // multiple cases possible
+  // case 0,1,2,3,4:
+  //   fmt.Printf("less than 5" )
 	default:
 		fmt.Printf("Not a digit\n")
 	}
@@ -648,7 +652,145 @@ func main(){
 ```
 
 <h2> 27. Functions </h2>
-<h2> 28. Arrays & slices data types </h2>
+
+```go
+ package main
+
+  import "fmt"
+
+  func square (number int) int{
+    return number * number
+  }
+
+  func displayMessage(country string){
+    fmt.Printf("I love my motherland: %v\n", country)
+  }
+
+  func main(){
+    displayMessage("Bangladesh")
+    displayMessage("India")
+    fmt.Printf("Square of 6 = %v\n",square(6))
+    fmt.Printf("Square of 7 = %v\n",square(7))
+  }
+```
+
+<h2> 28. create a function for calculator </h2>
+
+```go
+    package main
+
+    import "fmt"
+
+    func add(x, y float32) float32{
+      return x + y
+    }
+    func sub(x, y float32) float32{
+      return x - y
+    }
+    func mul(x, y float32) float32{
+      return x * y
+    }
+    func div(x, y float32) float32{
+      return x / y
+    }
+
+    func main(){
+      var num1, num2, result float32
+      var option string
+
+      i:=true
+      for  i==true {
+        fmt.Printf("num1 = ")
+        fmt.Scan(&num1)
+
+        fmt.Printf("num2 = ")
+        fmt.Scan(&num2)
+
+        fmt.Printf("choose an option ( + - * / ) : ")
+        fmt.Scan(&option)
+
+        switch option {
+          case "+":
+            result = add(num1, num2)
+          case "-":
+            result = sub(num1, num2)
+          case "*":
+            result = mul(num1, num2)
+          case "/":
+            result = div(num1, num2)
+          default:
+            fmt.Println("Invalid option")
+            continue;
+        }
+        fmt.Printf("Result = %v\n",result)
+      }
+    }
+```
+
+<h2> 29. Pointers </h2>
+
+- dereferencing operator
+- A pointer is a variable whose value is the address of another variable, declaration: var varName \*varType
+
+  ```go
+  package main
+
+  import "fmt"
+
+  func change (val int) {
+    val = 8
+  }
+
+  func changeWihPointer (val *int) {
+    *val = 8
+  }
+
+  func main(){
+    x:=10
+    change(x)
+    fmt.Println(x)
+
+    // call by reference
+    changeWihPointer(&x)
+    fmt.Println(x)
+  }
+  ```
+
+<h2> 30.Structure </h2>
+- class is not supported here but we can use structs
+
+- example
+
+  ```go
+      package main
+
+      import "fmt"
+
+       type Student struct{
+          name string
+          age int
+          id int
+        }
+
+
+      func main(){
+
+         <!-- type Student struct{
+          name string
+          age int
+          id int
+        } -->
+
+        rahim := Student{"Anisul", 32,1302020017}
+        rahim.age = 30
+        fmt.Println(rahim)
+        fmt.Println(rahim.id)
+        fmt.Println(rahim.name)
+        fmt.Println(rahim.age)
+      }
+  ```
+
+<h2> 31. Arrays & slices data types </h2>
 
 - array is fixed in Go
 - var arrayName[size] dataType
@@ -657,6 +799,10 @@ func main(){
 - array index starts with 0
 - what if we dont know the size of array then we will use slice; allows us to use dynamic size
 - append(sliceName, sliceNewValue)
+
+```
+
+```
 
 ```
 
